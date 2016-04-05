@@ -19,22 +19,23 @@ Byte # |   Description  | Type
   11   |     Pitch-2    | Signed int (2 bytes), Low  order
   12   |      Yaw-1     | Signed int (2 bytes), High order
   13   |      Yaw-2     | Signed int (2 bytes), Low  order
-  14   |    Solenoids   | 1 byte (2 bits per solonoid)
-  15   | Hydaulics Pump | 1 byte (0 to 255 PWM Val)  
-  16   |     LEDs       | 1 byte (0 to 255 PWM Val)  
-  17   |   Thrusters    | 1 byte - Controls thruster's on status
-  18   |  PID Control   | 1 byte - bool for pid / manual control
-  19   | PID Tuning A-1 | Signed int (2 bytes), High order
-  20   | PID Tuning A-2 | Signed int (2 bytes), Low  order
-  21   | PID Tuning B-1 | Signed int (2 bytes), High order
-  22   | PID Tuning B-2 | Signed int (2 bytes), Low  order
-  23   | PID Tuning C-1 | Signed int (2 bytes), High order
-  24   | PID Tuning C-2 | Signed int (2 bytes), Low  order
-  25   |  PID Pivot X   | Signed int (1 byte)
-  26   |  PID Pivot Y   | Signed int (1 byte)
-  27   |  PID Pivot Z   | Signed int (1 byte)
-  28   |   CRC8 Check   | Use 0xD5 as polynomial
-  29   |   Tail Byte    | 0x13 - 19 decimal  
+  14   |   Camera Servo | 1 byte, Servo Angle + 90 degrees
+  15   |    Solenoids   | 1 byte (2 bits per solonoid)
+  16   | Hydaulics Pump | 1 byte (0 to 255 PWM Val)  
+  17   |     LEDs       | 1 byte (0 to 255 PWM Val)  
+  18   |   Thrusters    | 1 byte - Controls thruster's on status
+  19   |  PID Control   | 1 byte - bool for pid / manual control
+  20   | PID Tuning A-1 | Signed int (2 bytes), High order
+  21   | PID Tuning A-2 | Signed int (2 bytes), Low  order
+  22   | PID Tuning B-1 | Signed int (2 bytes), High order
+  23   | PID Tuning B-2 | Signed int (2 bytes), Low  order
+  24   | PID Tuning C-1 | Signed int (2 bytes), High order
+  25   | PID Tuning C-2 | Signed int (2 bytes), Low  order
+  26   |  PID Pivot X   | Signed int (1 byte)
+  27   |  PID Pivot Y   | Signed int (1 byte)
+  28   |  PID Pivot Z   | Signed int (1 byte)
+  29   |   CRC8 Check   | Use 0xD5 as polynomial
+  30   |   Tail Byte    | 0x13 - 19 decimal  
   
 Always set command to 0x01. In the future, there will be further options to program options are ask for certain data using this byte, but nothing is set yet.  
 
