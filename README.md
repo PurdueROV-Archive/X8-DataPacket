@@ -45,32 +45,40 @@ Byte # |   Description   | Type
 -------|-----------------|-------------------
   00   |      Header     |  0x12 - 18 decimal
   01   | Thruster Status |  1 bit per thruster
-  02   |    Pressure-1   |  Signed int (2 bytes), High order
-  03   |    Pressure-2   |  Signed int (2 bytes), Low order
-  04   |      Temp-1     |  32-bit float, Highest order
-  05   |      Temp-2     |  32-bit float, High order
-  06   |      Temp-3     |  32-bit float, Low order
-  07   |      Temp-4     |  32-bit float, Lowest order
-  08   |     IMU A-1     |  Signed int (2 bytes), High order
-  09   |     IMU A-2     |  Signed int (2 bytes), Low order
-  10   |     IMU B-1     |  Signed int (2 bytes), High order
-  11   |     IMU B-2     |  Signed int (2 bytes), Low order
-  12   |     IMU C-1     |  Signed int (2 bytes), High order
-  13   |     IMU C-2     |  Signed int (2 bytes), Low order
-  14   |     IMU D-1     |  Signed int (2 bytes), High order
-  15   |     IMU D-2     |  Signed int (2 bytes), Low order
-  16   |     IMU E-1     |  Signed int (2 bytes), High order
-  17   |     IMU E-2     |  Signed int (2 bytes), Low order
-  18   |     IMU F-1     |  Signed int (2 bytes), High order
-  19   |     IMU F-2     |  Signed int (2 bytes), Low order
-  20   |     IMU G-1     |  Signed int (2 bytes), High order
-  21   |     IMU G-2     |  Signed int (2 bytes), Low order
-  22   |     IMU H-1     |  Signed int (2 bytes), High order
-  23   |     IMU H-2     |  Signed int (2 bytes), Low order
-  24   |     IMU I-1     |  Signed int (2 bytes), High order
-  25   |     IMU I-2     |  Signed int (2 bytes), Low order
-  26   |    CRC8 Check   | Use 0xD5 as polynomial 
-  27   |    Tail Byte    | 0x13 - 19 decimal  
+  02   |    Pressure-1   |  32-bit float
+  03   |    Pressure-2   |  32-bit float
+  04   |    Pressure-3   |  32-bit float
+  05   |    Pressure-4   |  32-bit float
+  06   |      Temp-1     |  32-bit float
+  07   |      Temp-2     |  32-bit float
+  08   |      Temp-3     |  32-bit float
+  09   |      Temp-4     |  32-bit float
+  10   |      IMU-Lx     |  32-bit float 
+  11   |      IMU-Lx     |  32-bit float 
+  12   |      IMU-Lx     |  32-bit float 
+  13   |      IMU-Lx     |  32-bit float 
+  14   |      IMU-Ly     |  32-bit float 
+  15   |      IMU-Ly     |  32-bit float 
+  16   |      IMU-Ly     |  32-bit float 
+  17   |      IMU-Ly     |  32-bit float 
+  18   |      IMU-Lz     |  32-bit float 
+  19   |      IMU-Lz     |  32-bit float 
+  20   |      IMU-Lz     |  32-bit float 
+  21   |      IMU-Lz     |  32-bit float
+  22   |      IMU-Rx     |  32-bit float
+  23   |      IMU-Rx     |  32-bit float
+  24   |      IMU-Rx     |  32-bit float
+  25   |      IMU-Rx     |  32-bit float
+  26   |      IMU-Ry     |  32-bit float
+  27   |      IMU-Ry     |  32-bit float
+  28   |      IMU-Ry     |  32-bit float
+  29   |      IMU-Ry     |  32-bit float
+  30   |      IMU-Rz     |  32-bit float
+  31   |      IMU-Rz     |  32-bit float
+  32   |      IMU-Rz     |  32-bit float
+  33   |      IMU-Rz     |  32-bit float
+  34   |    CRC8 Check   | Use 0xD5 as polynomial 
+  35   |    Tail Byte    | 0x13 - 19 decimal  
   
   
 C :: CRC-8 Checksum Code
