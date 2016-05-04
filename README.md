@@ -37,7 +37,9 @@ Byte # |   Description  | Type
   29   |  PID Pivot Y   | Signed int (1 byte)
   30   |  PID Pivot Z   | Signed int (1 byte)
   31   |   CRC8 Check   | Use 0xD5 as polynomial
-  32   |   Tail Byte    | 0x13 - 19 decimal  
+  32   |   Tail Byte    | 0x13 - 19 decimal   
+  
+Always set command to 0x01. In the future, there will be further options to program options are ask for certain data using this byte, but nothing is set yet.  
   
 Stabilization Byte Acting Axis
 ------------------------
@@ -51,8 +53,7 @@ Stabilization Byte Acting Axis
   05   |       Lz
   06   |     Unused
   07   |     Unused
-  
-Always set command to 0x01. In the future, there will be further options to program options are ask for certain data using this byte, but nothing is set yet.  
+
 
 Main Micro -> Battlestation Packet
 ---------------------------------------------
