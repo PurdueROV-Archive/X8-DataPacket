@@ -82,8 +82,16 @@ Byte # |   Description   | Type
   20   |      IMU-Ry     | Signed int (2 bytes), Low  order
   21   |      IMU-Rz     | Signed int (2 bytes), High order
   22   |      IMU-Rz     | Signed int (2 bytes), Low  order
-  23   |    CRC8 Check   | Use 0xD5 as polynomial 
-  24   |    Tail Byte    | 0x13 - 19 decimal  
+  23   |    Thruster 1   | Thruster Value, Offset from 0
+  24   |    Thruster 2   | Thruster Value, Offset from 0
+  25   |    Thruster 3   | Thruster Value, Offset from 0
+  26   |    Thruster 4   | Thruster Value, Offset from 0
+  27   |    Thruster 5   | Thruster Value, Offset from 0
+  28   |    Thruster 6   | Thruster Value, Offset from 0
+  29   |    Thruster 7   | Thruster Value, Offset from 0
+  30   |    Thruster 8   | Thruster Value, Offset from 0
+  31   |    CRC8 Check   | Use 0xD5 as polynomial 
+  32   |    Tail Byte    | 0x13 - 19 decimal  
   
   
 C :: CRC-8 Checksum Code
