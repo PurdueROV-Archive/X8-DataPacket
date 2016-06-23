@@ -21,23 +21,18 @@ Byte # |   Description  | Type
   13   |      Yaw-2     | Signed int (2 bytes), Low  order
   14   |  Camera Servo  | Signed int (1 byte), Offset from 0
   15   |   Solenoids    | 1 byte (2 bits per solonoid)
-  16   | Hydaulics Pump | 1 byte (0 to 255 PWM Val)  
-  17   |     LEDs       | 1 byte (0 to 255 PWM Val)  
-  18   |   Thrusters    | 1 byte - Controls thruster's on status
-  19   |  Stabilization | 1 byte - bool for pid / manual control
-  20   | Rotation P Val | Signed int (2 bytes), High order
-  21   | Rotation P Val | Signed int (2 bytes), Low  order
-  22   | Rotation I Val | Signed int (2 bytes), High order
-  23   | Rotation I Val | Signed int (2 bytes), Low  order
-  24   | Location P Val | Signed int (2 bytes), High order
-  25   | Location P Val | Signed int (2 bytes), Low  order
-  26   | Location I Val | Signed int (2 bytes), High order
-  27   | Location I Val | Signed int (2 bytes), Low  order
-  28   |  PID Pivot X   | Signed int (1 byte)
-  29   |  PID Pivot Y   | Signed int (1 byte)
-  30   |  PID Pivot Z   | Signed int (1 byte)
-  31   |   CRC8 Check   | Use 0xD5 as polynomial
-  32   |   Tail Byte    | 0x13 - 19 decimal   
+  16   |   Thrusters    | 1 byte - Controls thruster's on status
+  17   |  Stabilization | 1 byte - bool for pid / manual control
+  18   | Rotation P Val | Signed int (2 bytes), High order
+  19   | Rotation P Val | Signed int (2 bytes), Low  order
+  20   | Rotation I Val | Signed int (2 bytes), High order
+  21   | Rotation I Val | Signed int (2 bytes), Low  order
+  22   | Location P Val | Signed int (2 bytes), High order
+  23   | Location P Val | Signed int (2 bytes), Low  order
+  24   | Location I Val | Signed int (2 bytes), High order
+  25   | Location I Val | Signed int (2 bytes), Low  order
+  26   |   CRC8 Check   | Use 0xD5 as polynomial
+  27   |   Tail Byte    | 0x13 - 19 decimal   
   
 Always set command to 0x01. In the future, there will be further options to program options are ask for certain data using this byte, but nothing is set yet.  
   
